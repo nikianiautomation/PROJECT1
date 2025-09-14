@@ -9,5 +9,5 @@ resource "aws_instance" "ec2_example" {
     tags = {
        Name = "ec2_jenkins"
     }
-    user_data = file("/resources/jenkins_installation.sh")
+    user_data = file("../resources/jenkins_installation.sh")
 }
